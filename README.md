@@ -1,6 +1,6 @@
 # [Visit My Website](https://jabulani-n.github.io)
 
-Interested in seeing how I made this one?
+Interested in seeing how I made it?
 
 
 This website's source code is [right here](https://github.com/Jabulani-N/Jabulani-N.github.io/blob/main/index.html)
