@@ -1,5 +1,81 @@
+<html>
+    <style>
+        .hover-text {
+            position: relative;
+            display: inline-block;
+            /*cursor: pointer;*/ /* Changes cursor to pointer on hover */
+        }
+        .hover-text img {
+            display: none; /* Hide the image by default */
+            position: absolute;
+            top: 20px; /* Adjust position as needed */
+            left: 0;
+            width: 200px; /* Set the desired width */
+            height: auto; /* Maintain aspect ratio */
+            object-fit: cover;
+            z-index: 1; /* Ensure the image appears above other content */
+        }
+        .hover-text:hover img {
+            display: block; /* Show the image on hover */
+        }
+
+
+    .container {
+      position: relative;
+      width: 50%;
+    }
+
+    .image {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: #29cc61;
+    }
+
+    .container:hover .overlay {
+      opacity: 1;
+    }
+
+    .text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+            a:link {
+                color: white; /* Unvisited link */
+            }
+            a:visited {
+                color: white; /* Visited link */
+            }
+            a:hover {
+                color: orange; /* Mouse over link */
+            }
+            a:active {
+                color: red; /* Clicked link */
+            }
+    </style>
+
 <div>
-    <img src="https://media.licdn.com/dms/image/D4D03AQG3vgXmvfo0CA/profile-displayphoto-shrink_800_800/0/1664312091251?e=1723075200&v=beta&t=11eS3vDu15N96pbZDcRBZbFvf_DN3z4ifyGDUzp3_tE"
+    <img src="assets/img/me.jpg"
     alt="Jabulani Ndhlovu"
     style="width: 50%; max-width: 50%; float: right;">
 </div>
@@ -9,7 +85,17 @@
 </div>
 
 <div>
-    <p>I am a software engineer with </p>
+    <p>
+        I am a software engineer who emphasizes
+        documentation; proficient in
+        Python, C, Matlab & more. Loves
+        writing easily understood
+        documentations and guides,
+        and studied in multiple
+        sciences and
+        utilizations of
+        machine learning
+    </p>
 </div>
 
 
@@ -770,13 +856,6 @@
     </div>
   </section><!-- End Contact Section -->
 
-  <div class="credits">
-    <!-- All the links in the footer should remain intact. -->
-    <!-- You can delete the links only if you purchased the pro version. -->
-    <!-- Licensing information: https://bootstrapmade.com/license/ -->
-    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/personal-free-resume-bootstrap-template/ -->
-    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-  </div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
